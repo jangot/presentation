@@ -21,17 +21,16 @@ var PRESENTATIONS = [
     },
 
     {
-        title : 'Solar system 2',
-        name : 'solarSystem2',
+        title : 'Sea',
+        name : 'sea',
         photos : [
-            'slides/solarSystem/3.jpg',
-            'slides/solarSystem/6.jpg',
-            'slides/solarSystem/1.jpg',
-            'slides/solarSystem/2.jpg',
-            'slides/solarSystem/4.jpg',
-            'slides/solarSystem/9.jpg',
-            'slides/solarSystem/11.jpg',
-            'slides/solarSystem/7.jpg'
+            'slides/sea/1.jpg',
+            'slides/sea/2.jpg',
+            'slides/sea/3.jpg',
+            'slides/sea/4.jpg',
+            'slides/sea/5.jpg',
+            'slides/sea/6.jpg',
+            'slides/sea/7.jpg'
         ]
     }
 ]
