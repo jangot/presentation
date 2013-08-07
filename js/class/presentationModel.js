@@ -67,7 +67,14 @@ Model.prototype = {
 
     _isPresentation : function(presentation) {
         if (!presentation) {
-            throw Error('There is\'t presentation');
+            throw Error('There is\'t presentation.');
+        }
+        if (
+            !presentation.title
+            || !presentation.name
+            || $.type(presentation.photos) !== 'array'
+            ) {
+            throw Error('Presentation is broken.')
         }
     }
 
