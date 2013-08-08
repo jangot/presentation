@@ -4,7 +4,7 @@ function Model() {
         selectedSlide : null,
         presentations : null
     };
-    this._calbacks = {};
+    this._callbacks = {};
 }
 
 Model.prototype = {
@@ -41,8 +41,8 @@ Model.prototype = {
         if (!context) {
             context = this;
         }
-        this._calbacks[name] = this._calbacks[name] || [];
-        this._calbacks[name].push(cb.bind(context));
+        this._callbacks[name] = this._callbacks[name] || [];
+        this._callbacks[name].push(cb.bind(context));
 
         return this;
     },
@@ -56,11 +56,11 @@ Model.prototype = {
     },
 
     _notify : function(name, data) {
-        if (!this._calbacks[name]) {
+        if (!this._callbacks[name]) {
             return;
         }
-        for (var i = 0; i < this._calbacks[name].length; i++) {
-            this._calbacks[name][i](data);
+        for (var i = 0; i < this._callbacks[name].length; i++) {
+            this._callbacks[name][i](data);
         }
         return this;
     },
