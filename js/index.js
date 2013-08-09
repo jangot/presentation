@@ -1,4 +1,8 @@
 $(function() {
+    $('.userSelectNone').css({
+        userSelect: 'none'
+    });
+
     var model = new Model();
     var app = new Application(model);
 
